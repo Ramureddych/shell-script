@@ -3,8 +3,11 @@
 **shell script to push to github steps**
 
 *create a repo in github
+
 *clone repo in local laptop 
+
 *start devoloping
+
 *add the files to temporary area
 ---
 git add <file-name>
