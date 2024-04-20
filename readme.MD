@@ -9,14 +9,19 @@
 *start devoloping
 
 *add the files to temporary area
+
 ---
 git add <file-name>
 ---
+
 * Commit the changes
+
 ---
 git commit -m "why you commiting"
 ---
+
 *push the changes to github repo
+
 ---
 git push -u origin main
 ---
