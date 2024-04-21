@@ -1,37 +1,24 @@
-# shell script
+# Shell Script
 
-**shell script to push to github steps**
-
-*create a repo in github
-
-*clone repo in local laptop 
-
-*start devoloping
-
-*add the files to temporary area
-
----
-git add [file--name]
-
----
-
-
-*Commit the changes
-
----
-
-git commit -m "why you commiting"
-
----
-
-*push the changes to github repo
-
----
+**steps:**
+* Create repo in Github
+* Clone repo in local laptop
+* Start developing
+* Add the files to temp area
+```
+git add <file-name>
+```
+* Commit the changes
+```
+git commit -m "why-you-commited"
+```
+* Push the changes to GitHub/Central repo
+```
 git push -u origin main
+```
 
----
+**naming convention: use small case with Hyphons(-). No spaces**
 
-git add .; git commit -m "some-message"; git push -u origin main
-
-here  . is for all files and we can givce in single line all commands.
-
+```
+git add . ; git commit -m "some-message"; git push -u origin main
+```
