@@ -20,11 +20,11 @@ else
     echo "installation of mysql is success"
 fi
 
-dnf inatall git -y
+dnf install git -y
  if [ $? -ne 0 ]
  then
      echo "installation of git...failure"
-    exit 1
+     exit 1
  else 
      echo "installation of git.....success"
  fi
