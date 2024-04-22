@@ -6,7 +6,7 @@ echo "script name : $0"
 echo "current working directory: $PWD"
 echo "Home directory of current user: $HOME"
 echo "which user is running the script: $USER"
-echo "Hostname:&HOSTNAME"
+echo "Hostname: $HOSTNAME"
 echo "process id of current shell script: $$"
 sleep 60&
 echo "process if of last background command: $!"
