@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#passing variables from outside
 person1=$1
 person2=$2
 
