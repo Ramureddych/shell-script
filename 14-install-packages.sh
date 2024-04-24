@@ -10,15 +10,15 @@ GREEN="\e[32m"
 YELLOW="\e[33m"
 NOCOLOUR="\e[0m"
 
-# VALIDATE(){
-#    if [ $1 -ne 0 ]
-#    then
-#         echo -e "$2...$RED FAILURE $NOCOLOUR"
-#         exit 1
-#     else
-#         echo -e "$2...$GREEN SUCCESS $NOCOLOUR"
-#     fi
-# }
+VALIDATE(){
+   if [ $1 -ne 0 ]
+   then
+        echo -e "$2...$RED FAILURE $NOCOLOUR"
+        exit 1
+    else
+        echo -e "$2...$GREEN SUCCESS $NOCOLOUR"
+    fi
+}
 
 if [ $USERID -ne 0 ]
 then
@@ -40,12 +40,3 @@ do
         VALIDATE $? "Installation of $i"
     fi
 done
-VALIDATE(){
-   if [ $1 -ne 0 ]
-   then
-        echo -e "$2...$RED FAILURE $NOCOLOUR"
-        exit 1
-    else
-        echo -e "$2...$GREEN SUCCESS $NOCOLOUR"
-    fi
-}
