@@ -10,15 +10,15 @@ GREEN="\e[32m"
 YELLOW="\e[33m"
 NOCOLOUR="\e[0m"
 
-VALIDATE(){
-   if [ $1 -ne 0 ]
-   then
-        echo -e "$2...$RED FAILURE $NOCOLOUR"
-        exit 1
-    else
-        echo -e "$2...$GREEN SUCCESS $NOCOLOUR"
-    fi
-}
+# VALIDATE(){
+#    if [ $1 -ne 0 ]
+#    then
+#         echo -e "$2...$RED FAILURE $NOCOLOUR"
+#         exit 1
+#     else
+#         echo -e "$2...$GREEN SUCCESS $NOCOLOUR"
+#     fi
+# }
 
 if [ $USERID -ne 0 ]
 then
@@ -36,7 +36,16 @@ do
     then
         echo -e "$i already installed...$YELLOW SKIPPING $NOCOLOUR"
     else
-        dnf install $i -y &>>$LOGFILE
+         dnf install $i -y &>>$LOGFILE
         VALIDATE $? "Installation of $i"
     fi
 done
+VALIDATE(){
+   if [ $1 -ne 0 ]
+   then
+        echo -e "$2...$RED FAILURE $NOCOLOUR"
+        exit 1
+    else
+        echo -e "$2...$GREEN SUCCESS $NOCOLOUR"
+    fi
+}
